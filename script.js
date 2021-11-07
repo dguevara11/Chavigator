@@ -49,18 +49,18 @@ function searchButton() {
 // }
 
 
-$.ajax({
-    "headers": {
-        "Access-Control-Allow-Origin":"*"
-    },
-    url: "https://projects.propublica.org/nonprofits/api/v2/search.json?state%5Bid%5D=TX",
-    type: 'GET',
-    dataType: 'json', // added data type
-    success: function(res) {
-        console.log(res);
-        alert(res);
-    }
-});
+// $.ajax({
+//     "headers": {
+//         "Access-Control-Allow-Origin":"*"
+//     },
+//     url: "https://projects.propublica.org/nonprofits/api/v2/search.json?state%5Bid%5D=TX",
+//     type: 'GET',
+//     dataType: 'json', // added data type
+//     success: function(res) {
+//         console.log(res);
+//         alert(res);
+//     }
+// });
 
 
 
