@@ -11,22 +11,20 @@
 <body>
 
 
-    <div class="head">
-        <h1>Chavigator</h1>
-        <p>Your navigator to finding charities!</p>
-    </div>
-    <div class="Header">Chavigator</div>
+
+    
 
     <div class="Links">
-        <a href="index.html"> Map </a>
-        <a href="results.html" class="CurrentTab"> Search </a>
-        <form>
-            <input type="text" id="fname" name="fname" value="Search..."><br>
-            <!-- <button type="submit"><i class="searchButton" onclick="searchButton()"></i></button> -->
-        </form>
-        <input id="searchButton" type="image" src="assets/search.png" onclick="searchButton()" />
+        <h1 >Chavigator</h1>
+        <p>Your navigator to finding charities!</p>
 
+        <a id="secondlevel" href="index.html"> Map </a>
+        <a id="secondlevel" href="index.html" alt ="TX" onclick="stateSearch(alt)"> Search </a>
+        <input type="text" placeholder="Search.." id="searchBar">
+
+        <a img id="searchGlass" src="assets/search.png"  onclick="searchButton()" >
     </div>
+
     <div id="mapPicture">
 
         <img src="assets/map.png" alt="Workplace" usemap="#workmap" width="1000" height="681">

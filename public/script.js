@@ -28,8 +28,8 @@ function stateSearch(StateName) {
 
 }
 
-function searchButton(TextInput) {
-
+function searchButton() {
+    TextInput = document.getElementById("searchBar").innerHTML;
     $.ajax({
         url: "http://localhost:8080/api?" + new URLSearchParams({ "q": TextInput }),
         type: 'GET',
