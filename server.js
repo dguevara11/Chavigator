@@ -12,7 +12,7 @@ server.get('/api', async (req, res) => {
       if (req.params.state)
       paramName["state[id]"] = req.params.state
       if (req.params.q)
-      paramName[""] = req.params.q
+      paramName["q="] = req.params.q
       const apiResponse = await fetch(
         'https://projects.propublica.org/nonprofits/api/v2/search.json?' + new URLSearchParams(paramName)
       )
