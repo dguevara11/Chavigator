@@ -3,39 +3,48 @@
 //     type: 'GET',
 //     dataType: 'json', // added data type
 //     success: function(res) {
-//         console.log((new URLSearchParams({"state":"TX"})).toString());
+//         console.log((new URLSearchParams({"state":"TX"}).toString()));
 //         console.log(res);
 //         alert(res);
 //     }
 // });
 
 function stateSearch(StateName) {
-    //var StateName = this.getAttribute('alt');
+    document.getElementById("mapPicture").hidden =true;
     $.ajax({
-        url: "http://localhost:8080/api?" + new URLSearchParams({"state":StateName}),
+        url: "http://localhost:8080/api?" + new URLSearchParams({ "state": StateName }),
         type: 'GET',
         dataType: 'json', // added data type
-        success: function(res) {
+        success: function (res) {
             console.log(res);
-            alert(res);
+            let organizationsList = res.organizations
+            let fullList = ""
+            for (let i = 0; i < organizationsList.length; i++) {
+                fullList += organizationsList[i].name + " </br>"
+            }
+            document.getElementById('resultsInformation').innerHTML = fullList
         }
     });
-    //Now to break up the res
 
 }
 
 function searchButton(TextInput) {
 
     $.ajax({
-        url: "http://localhost:8080/api?" + new URLSearchParams({"q=":TextInput}),
+        url: "http://localhost:8080/api?" + new URLSearchParams({ "q": TextInput }),
         type: 'GET',
         dataType: 'json', // added data type
-        success: function(res) {
+        success: function (res) {
             console.log(res);
-            alert(res);
+            let organizationsList = res.organizations
+            let fullList = ""
+            for (let i = 0; i < organizationsList.length; i++) {
+                fullList += organizationsList[i].name + " </br>"
+            }
+            document.getElementById('resultsInformation').innerHTML = fullList
         }
     });
-    
+
 
 }
 

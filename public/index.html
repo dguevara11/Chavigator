@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="style.css">
 <style>
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
 
 <body>
@@ -14,57 +15,72 @@
         <h1>Chavigator</h1>
         <p>Your navigator to finding charities!</p>
     </div>
+    <div class="Header">Chavigator</div>
 
-    <div class = "mapPicture">
+    <div class="Links">
+        <a href="index.html"> Map </a>
+        <a href="results.html" class="CurrentTab"> Search </a>
+        <form>
+            <input type="text" id="fname" name="fname" value="Search..."><br>
+            <!-- <button type="submit"><i class="searchButton" onclick="searchButton()"></i></button> -->
+        </form>
+        <input id="searchButton" type="image" src="assets/search.png" onclick="searchButton()" />
+
+    </div>
+    <div id="mapPicture">
 
         <img src="assets/map.png" alt="Workplace" usemap="#workmap" width="1000" height="681">
 
         <map name="workmap">
-          <area shape="rect" coords="368,425,520,535" alt="TX" onclick='stateSearch(alt)'>
-          <area shape="rect" coords="804,166,902,201" alt="NY" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="51,7,158,91" alt="WA" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="42,77,136,185" alt="OR" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="173,25,211,200" alt="ID" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="244,36,368,147" alt="MT" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="254,137,360,239" alt="WY" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="381,57,493,129" alt="ND" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="375,129,497,197" alt="SD" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="504,59,560,185" alt="MN" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="4,158,68,372" alt="CA" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="88,177,159,331" alt="NV" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="186,229,258,325" alt="UT" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="169,319,236,456" alt="AZ" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="80,462,188,581" alt="AK" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="264,333,359,456" alt="NM" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="276,239,389,339" alt="CO" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="402,201,497,269" alt="NE" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="402,275,519,340" alt="KS" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="436,347,515,417" alt="OK" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="512,192,579,254" alt="IA" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="591,113,640,205" alt="WI" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="656,113,726,213" alt="MI" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="538,263,601,352" alt="MO" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="608,213,650,320" alt="IL" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="541,363,600,434" alt="AR" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="556,445,608,521" alt="LA" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="616,401,660,475" alt="MS" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="664,229,710,287" alt="IN" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="660,320,753,331" alt="KY" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="637,357,726,376" alt="TN" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="712,224,776,265" alt="OH" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="667,393,725,474" alt="AL" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="754,485,848,569" alt="FL" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="726,386,782,469" alt="GA" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="778,373,836,413" alt="SC" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="780,339,875,361" alt="NC" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="820,284,876,315" alt="VA" href="results.html" onclick='stateSearch()'>
-          <area shape="rect" coords="773,272,804,291" alt="WV" href="results.html" onclick='stateSearch()'>
+            <area shape="rect" coords="368,425,520,535" alt="TX" onclick="stateSearch(alt)">
+            <area shape="rect" coords="804,166,902,201" alt="NY" onclick="stateSearch(alt)">
+            <area shape="rect" coords="51,7,158,91" alt="WA" onclick="stateSearch(alt)">
+            <area shape="rect" coords="42,77,136,185" alt="OR" onclick="stateSearch(alt)">
+            <area shape="rect" coords="173,25,211,200" alt="ID" onclick="stateSearch(alt)">
+            <area shape="rect" coords="244,36,368,147" alt="MT" onclick="stateSearch(alt)">
+            <area shape="rect" coords="254,137,360,239" alt="WY" onclick="stateSearch(alt)">
+            <area shape="rect" coords="381,57,493,129" alt="ND" onclick="stateSearch(alt)">
+            <area shape="rect" coords="375,129,497,197" alt="SD" onclick="stateSearch(alt)">
+            <area shape="rect" coords="504,59,560,185" alt="MN" onclick="stateSearch(alt)">
+            <area shape="rect" coords="4,158,68,372" alt="CA" onclick="stateSearch(alt)">
+            <area shape="rect" coords="88,177,159,331" alt="NV" onclick="stateSearch(alt)">
+            <area shape="rect" coords="186,229,258,325" alt="UT" onclick="stateSearch(alt)">
+            <area shape="rect" coords="169,319,236,456" alt="AZ" onclick="stateSearch(alt)">
+            <area shape="rect" coords="80,462,188,581" alt="AK" onclick="stateSearch(alt)">
+            <area shape="rect" coords="264,333,359,456" alt="NM" onclick="stateSearch(alt)">
+            <area shape="rect" coords="276,239,389,339" alt="CO" onclick="stateSearch(alt)">
+            <area shape="rect" coords="402,201,497,269" alt="NE" onclick="stateSearch(alt)">
+            <area shape="rect" coords="402,275,519,340" alt="KS" onclick="stateSearch(alt)">
+            <area shape="rect" coords="436,347,515,417" alt="OK" onclick="stateSearch(alt)">
+            <area shape="rect" coords="512,192,579,254" alt="IA" onclick="stateSearch(alt)">
+            <area shape="rect" coords="591,113,640,205" alt="WI" onclick="stateSearch(alt)">
+            <area shape="rect" coords="656,113,726,213" alt="MI" onclick="stateSearch(alt)">
+            <area shape="rect" coords="538,263,601,352" alt="MO" onclick="stateSearch(alt)">
+            <area shape="rect" coords="608,213,650,320" alt="IL" onclick="stateSearch(alt)">
+            <area shape="rect" coords="541,363,600,434" alt="AR" onclick="stateSearch(alt)">
+            <area shape="rect" coords="556,445,608,521" alt="LA" onclick="stateSearch(alt)">
+            <area shape="rect" coords="616,401,660,475" alt="MS" onclick="stateSearch(alt)">
+            <area shape="rect" coords="664,229,710,287" alt="IN" onclick="stateSearch(alt)">
+            <area shape="rect" coords="660,320,753,331" alt="KY" onclick="stateSearch(alt)">
+            <area shape="rect" coords="637,357,726,376" alt="TN" onclick="stateSearch(alt)">
+            <area shape="rect" coords="712,224,776,265" alt="OH" onclick="stateSearch(alt)">
+            <area shape="rect" coords="667,393,725,474" alt="AL" onclick="stateSearch(alt)">
+            <area shape="rect" coords="754,485,848,569" alt="FL" onclick="stateSearch(alt)">
+            <area shape="rect" coords="726,386,782,469" alt="GA" onclick="stateSearch(alt)">
+            <area shape="rect" coords="778,373,836,413" alt="SC" onclick="stateSearch(alt)">
+            <area shape="rect" coords="780,339,875,361" alt="NC" onclick="stateSearch(alt)">
+            <area shape="rect" coords="820,284,876,315" alt="VA" onclick="stateSearch(alt)">
+            <area shape="rect" coords="773,272,804,291" alt="WV" onclick="stateSearch(alt)">
         </map>
-        
-
-
 
     </div>
+
+    <div>
+        <p id="resultsInformation">
+            apples
+        </p>
+    </div>
+
 
 </body>
 
