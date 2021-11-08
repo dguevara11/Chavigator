@@ -11,75 +11,81 @@
 <body>
 
 
-
-    
-
     <div class="Links">
-        <h1 >Chavigator</h1>
-        <p>Your navigator to finding charities!</p>
-
-        <a id="secondlevel" href="index.html"> Map </a>
-        <a id="secondlevel" href="index.html" alt ="TX" onclick="stateSearch(alt)"> Search </a>
+        <h1 id="top" style="font-size:40px;">Chavigator </h1>
+        <p id="top" style="padding-top:1.8%;color:rgb(3, 46, 3)"> Your navigator to finding charities!</p>
+        <img id="searchGlass" src="assets/search.png" alt="TX" onclick="stateSearch(alt)">
         <input type="text" placeholder="Search.." id="searchBar">
+        <a id="rightSide" style="padding-top: 1%;" > Search </a>
+        <a id="rightSide" style="padding-top: 1%;" href="index.html"> Map </a>
+    </div>
 
-        <a img id="searchGlass" src="assets/search.png"  onclick="searchButton()" >
+    <div class="dropdown">
+        <button onclick="showDrop()" class="dropbtn">Change map</button>
+        <div id="myDropdown" class="dropdown-content">
+            <button id="politics" onclick="changeMap(id)" class="dropbtn">Politics</button>
+            <button id="suicideRates" onclick="changeMap(id)" class="dropbtn">Suicide Rates</button>
+            <button id="poverty" onclick="changeMap(id)" class="dropbtn">Poverty</button>
+        </div>
     </div>
 
     <div id="mapPicture">
 
-        <img src="assets/map.png" alt="Workplace" usemap="#workmap" width="1000" height="681">
+        <img id="mainMap" src="assets/map.png" alt="Workplace" usemap="#workmap" width="1000" height="681">
 
         <map name="workmap">
-            <area shape="rect" coords="368,425,520,535" alt="TX" onclick="stateSearch(alt)">
-            <area shape="rect" coords="804,166,902,201" alt="NY" onclick="stateSearch(alt)">
-            <area shape="rect" coords="51,7,158,91" alt="WA" onclick="stateSearch(alt)">
-            <area shape="rect" coords="42,77,136,185" alt="OR" onclick="stateSearch(alt)">
-            <area shape="rect" coords="173,25,211,200" alt="ID" onclick="stateSearch(alt)">
-            <area shape="rect" coords="244,36,368,147" alt="MT" onclick="stateSearch(alt)">
-            <area shape="rect" coords="254,137,360,239" alt="WY" onclick="stateSearch(alt)">
-            <area shape="rect" coords="381,57,493,129" alt="ND" onclick="stateSearch(alt)">
-            <area shape="rect" coords="375,129,497,197" alt="SD" onclick="stateSearch(alt)">
-            <area shape="rect" coords="504,59,560,185" alt="MN" onclick="stateSearch(alt)">
-            <area shape="rect" coords="4,158,68,372" alt="CA" onclick="stateSearch(alt)">
-            <area shape="rect" coords="88,177,159,331" alt="NV" onclick="stateSearch(alt)">
-            <area shape="rect" coords="186,229,258,325" alt="UT" onclick="stateSearch(alt)">
-            <area shape="rect" coords="169,319,236,456" alt="AZ" onclick="stateSearch(alt)">
-            <area shape="rect" coords="80,462,188,581" alt="AK" onclick="stateSearch(alt)">
-            <area shape="rect" coords="264,333,359,456" alt="NM" onclick="stateSearch(alt)">
-            <area shape="rect" coords="276,239,389,339" alt="CO" onclick="stateSearch(alt)">
-            <area shape="rect" coords="402,201,497,269" alt="NE" onclick="stateSearch(alt)">
-            <area shape="rect" coords="402,275,519,340" alt="KS" onclick="stateSearch(alt)">
-            <area shape="rect" coords="436,347,515,417" alt="OK" onclick="stateSearch(alt)">
-            <area shape="rect" coords="512,192,579,254" alt="IA" onclick="stateSearch(alt)">
-            <area shape="rect" coords="591,113,640,205" alt="WI" onclick="stateSearch(alt)">
-            <area shape="rect" coords="656,113,726,213" alt="MI" onclick="stateSearch(alt)">
-            <area shape="rect" coords="538,263,601,352" alt="MO" onclick="stateSearch(alt)">
-            <area shape="rect" coords="608,213,650,320" alt="IL" onclick="stateSearch(alt)">
-            <area shape="rect" coords="541,363,600,434" alt="AR" onclick="stateSearch(alt)">
-            <area shape="rect" coords="556,445,608,521" alt="LA" onclick="stateSearch(alt)">
-            <area shape="rect" coords="616,401,660,475" alt="MS" onclick="stateSearch(alt)">
-            <area shape="rect" coords="664,229,710,287" alt="IN" onclick="stateSearch(alt)">
-            <area shape="rect" coords="660,320,753,331" alt="KY" onclick="stateSearch(alt)">
-            <area shape="rect" coords="637,357,726,376" alt="TN" onclick="stateSearch(alt)">
-            <area shape="rect" coords="712,224,776,265" alt="OH" onclick="stateSearch(alt)">
-            <area shape="rect" coords="667,393,725,474" alt="AL" onclick="stateSearch(alt)">
-            <area shape="rect" coords="754,485,848,569" alt="FL" onclick="stateSearch(alt)">
-            <area shape="rect" coords="726,386,782,469" alt="GA" onclick="stateSearch(alt)">
-            <area shape="rect" coords="778,373,836,413" alt="SC" onclick="stateSearch(alt)">
-            <area shape="rect" coords="780,339,875,361" alt="NC" onclick="stateSearch(alt)">
-            <area shape="rect" coords="820,284,876,315" alt="VA" onclick="stateSearch(alt)">
-            <area shape="rect" coords="773,272,804,291" alt="WV" onclick="stateSearch(alt)">
+            <area shape="rect" coords="368,425,520,535" id="TX" onclick="stateSearch(id)">
+            <area shape="rect" coords="804,166,902,201" id="NY" onclick="stateSearch(id)">
+            <area shape="rect" coords="51,7,158,91" id="WA" onclick="stateSearch(id)">
+            <area shape="rect" coords="42,77,136,185" id="OR" onclick="stateSearch(id)">
+            <area shape="rect" coords="173,25,211,200" id="ID" onclick="stateSearch(id)">
+            <area shape="rect" coords="244,36,368,147" id="MT" onclick="stateSearch(id)">
+            <area shape="rect" coords="254,137,360,239" id="WY" onclick="stateSearch(id)">
+            <area shape="rect" coords="381,57,493,129" id="ND" onclick="stateSearch(id)">
+            <area shape="rect" coords="375,129,497,197" id="SD" onclick="stateSearch(id)">
+            <area shape="rect" coords="504,59,560,185" id="MN" onclick="stateSearch(id)">
+            <area shape="rect" coords="4,158,68,372" id="CA" onclick="stateSearch(id)">
+            <area shape="rect" coords="88,177,159,331" id="NV" onclick="stateSearch(id)">
+            <area shape="rect" coords="186,229,258,325" id="UT" onclick="stateSearch(id)">
+            <area shape="rect" coords="169,319,236,456" id="AZ" onclick="stateSearch(id)">
+            <area shape="rect" coords="80,462,188,581" id="AK" onclick="stateSearch(id)">
+            <area shape="rect" coords="264,333,359,456" id="NM" onclick="stateSearch(id)">
+            <area shape="rect" coords="276,239,389,339" id="CO" onclick="stateSearch(id)">
+            <area shape="rect" coords="402,201,497,269" id="NE" onclick="stateSearch(id)">
+            <area shape="rect" coords="402,275,519,340" id="KS" onclick="stateSearch(id)">
+            <area shape="rect" coords="436,347,515,417" id="OK" onclick="stateSearch(id)">
+            <area shape="rect" coords="512,192,579,254" id="IA" onclick="stateSearch(id)">
+            <area shape="rect" coords="591,113,640,205" id="WI" onclick="stateSearch(id)">
+            <area shape="rect" coords="656,113,726,213" id="MI" onclick="stateSearch(id)">
+            <area shape="rect" coords="538,263,601,352" id="MO" onclick="stateSearch(id)">
+            <area shape="rect" coords="608,213,650,320" id="IL" onclick="stateSearch(id)">
+            <area shape="rect" coords="541,363,600,434" id="AR" onclick="stateSearch(id)">
+            <area shape="rect" coords="556,445,608,521" id="LA" onclick="stateSearch(id)">
+            <area shape="rect" coords="616,401,660,475" id="MS" onclick="stateSearch(id)">
+            <area shape="rect" coords="664,229,710,287" id="IN" onclick="stateSearch(id)">
+            <area shape="rect" coords="660,320,753,331" id="KY" onclick="stateSearch(id)">
+            <area shape="rect" coords="637,357,726,376" id="TN" onclick="stateSearch(id)">
+            <area shape="rect" coords="712,224,776,265" id="OH" onclick="stateSearch(id)">
+            <area shape="rect" coords="667,393,725,474" id="AL" onclick="stateSearch(id)">
+            <area shape="rect" coords="754,485,848,569" id="FL" onclick="stateSearch(id)">
+            <area shape="rect" coords="726,386,782,469" id="GA" onclick="stateSearch(id)">
+            <area shape="rect" coords="778,373,836,413" id="SC" onclick="stateSearch(id)">
+            <area shape="rect" coords="780,339,875,361" id="NC" onclick="stateSearch(id)">
+            <area shape="rect" coords="820,284,876,315" id="VA" onclick="stateSearch(id)">
+            <area shape="rect" coords="773,272,804,291" id="WV" onclick="stateSearch(id)">
         </map>
 
     </div>
 
     <div>
         <p id="resultsInformation">
-            apples
+
         </p>
     </div>
 
-
+    <a id="github" href="https://github.com/dguevara11/Chavigator">
+        <img alt="github logo" src="assets/github.png" width="100">
+    </a>
 </body>
 
 </html>

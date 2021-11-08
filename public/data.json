@@ -1,0 +1,252 @@
+[
+  {
+    "State": "Wyoming",
+    "suicideRate": "29.3000",
+    "suicideNumber": 170
+  },
+  {
+    "State": "AK",
+    "suicideRate": "28.5000",
+    "suicideNumber": 210
+  },
+  {
+    "State": "MO",
+    "suicideRate": "26.2000",
+    "suicideNumber": 289
+  },
+  {
+    "State": "NM",
+    "suicideRate": 24,
+    "suicideNumber": 513
+  },
+  {
+    "State": "CO",
+    "suicideRate": "22.1000",
+    "suicideNumber": 1312
+  },
+  {
+    "State": "UT",
+    "suicideRate": "21.2000",
+    "suicideNumber": 654
+  },
+  {
+    "State": "SD",
+    "suicideRate": "20.9000",
+    "suicideNumber": 182
+  },
+  {
+    "State": "OK",
+    "suicideRate": "20.5000",
+    "suicideNumber": 816
+  },
+  {
+    "State": "ID",
+    "suicideRate": "20.4000",
+    "suicideNumber": 365
+  },
+  {
+    "State": "OR",
+    "suicideRate": "20.4000",
+    "suicideNumber": 906
+  },
+  {
+    "State": "NV",
+    "suicideRate": "19.8000",
+    "suicideNumber": 642
+  },
+  {
+    "State": "MA",
+    "suicideRate": "19.4000",
+    "suicideNumber": 276
+  },
+  {
+    "State": "AZ",
+    "suicideRate": "18.7000",
+    "suicideNumber": 1419
+  },
+  {
+    "State": "WV",
+    "suicideRate": "18.5000",
+    "suicideNumber": 330
+  },
+  {
+    "State": "KA",
+    "suicideRate": "18.2000",
+    "suicideNumber": 523
+  },
+  {
+    "State": "MO",
+    "suicideRate": "18.2000",
+    "suicideNumber": 1141
+  },
+  {
+    "State": "ND",
+    "suicideRate": "18.1000",
+    "suicideNumber": 136
+  },
+  {
+    "State": "AR",
+    "suicideRate": 18,
+    "suicideNumber": 548
+  },
+  {
+    "State": "NH",
+    "suicideRate": "17.5000",
+    "suicideNumber": 255
+  },
+  {
+    "State": "TN",
+    "suicideRate": "17.2000",
+    "suicideNumber": 1219
+  },
+  {
+    "State": "IA",
+    "suicideRate": "16.7000",
+    "suicideNumber": 528
+  },
+  {
+    "State": "KY",
+    "suicideRate": "16.5000",
+    "suicideNumber": 756
+  },
+  {
+    "State": "AL",
+    "suicideRate": "16.3000",
+    "suicideNumber": 804
+  },
+  {
+    "State": "SC",
+    "suicideRate": "16.2000",
+    "suicideNumber": 852
+  },
+  {
+    "State": "NE",
+    "suicideRate": "16.1000",
+    "suicideNumber": 309
+  },
+  {
+    "State": "VT",
+    "suicideRate": 16,
+    "suicideNumber": 110
+  },
+  {
+    "State": "WA",
+    "suicideRate": "15.9000",
+    "suicideNumber": 1263
+  },
+  {
+    "State": "HI",
+    "suicideRate": "15.5000",
+    "suicideNumber": 224
+  },
+  {
+    "State": "OH",
+    "suicideRate": "15.1000",
+    "suicideNumber": 1806
+  },
+  {
+    "State": "LA",
+    "suicideRate": 15,
+    "suicideNumber": 704
+  },
+  {
+    "State": "GA",
+    "suicideRate": "14.6000",
+    "suicideNumber": 1585
+  },
+  {
+    "State": "FL",
+    "suicideRate": "14.5000",
+    "suicideNumber": 3465
+  },
+  {
+    "State": "MN",
+    "suicideRate": "14.4000",
+    "suicideNumber": 830
+  },
+  {
+    "State": "MS",
+    "suicideRate": "14.4000",
+    "suicideNumber": 436
+  },
+  {
+    "State": "MI",
+    "suicideRate": "14.3000",
+    "suicideNumber": 1472
+  },
+  {
+    "State": "IN",
+    "suicideRate": "14.2000",
+    "suicideNumber": 972
+  },
+  {
+    "State": "PA",
+    "suicideRate": "14.1000",
+    "suicideNumber": 1896
+  },
+  {
+    "State": "WI",
+    "suicideRate": 14,
+    "suicideNumber": 845
+  },
+  {
+    "State": "TX",
+    "suicideRate": "13.4000",
+    "suicideNumber": 3891
+  },
+  {
+    "State": "VA",
+    "suicideRate": "12.8000",
+    "suicideNumber": 1140
+  },
+  {
+    "State": "NC",
+    "suicideRate": "12.5000",
+    "suicideNumber": 1358
+  },
+  {
+    "State": "CT",
+    "suicideRate": "11.4000",
+    "suicideNumber": 435
+  },
+  {
+    "State": "DE",
+    "suicideRate": "11.3000",
+    "suicideNumber": 111
+  },
+  {
+    "State": "IL",
+    "suicideRate": "10.9000",
+    "suicideNumber": 1439
+  },
+  {
+    "State": "CA",
+    "suicideRate": "10.7000",
+    "suicideNumber": 4436
+  },
+  {
+    "State": "RI",
+    "suicideRate": "10.7000",
+    "suicideNumber": 123
+  },
+  {
+    "State": "MD",
+    "suicideRate": "10.3000",
+    "suicideNumber": 657
+  },
+  {
+    "State": "MA",
+    "suicideRate": "8.7000",
+    "suicideNumber": 647
+  },
+  {
+    "State": "NY",
+    "suicideRate": "8.3000",
+    "suicideNumber": 1705
+  },
+  {
+    "State": "NJ",
+    "suicideRate": 8,
+    "suicideNumber": 762
+  }
+]
